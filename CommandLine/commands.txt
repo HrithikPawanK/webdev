@@ -1,0 +1,56 @@
+ls -> list all items in current directory
+pwd -> print working directory
+
+cd -> change directory
+cd xyz -> move to xyz(in present directory) (forward) // Relative to current directory
+cd .. -> move back
+
+Relative vs Absolute paths
+
+cd / -> root directory (Absolute path)
+
+cd /c/users/hrith/Pictures -> (Absolute path) // we start with '/' for Absolute paths
+// it's basically from root
+
+cd ~ -> home directory
+
+cd ../../XYZ -> goback two steps then move to XYZ 
+
+**Making New Directories
+
+mkdir dirname
+
+mkdir dirname1 dirname2 
+
+mkdir ../XYZ (create a directory in one step back)
+
+mkdir ABC/XYZ  ../XYZ  XYZ
+
+**man (manual)
+
+--> it displays information
+
+man ls
+
+
+** Flags (-X) // we can pass flags to the commands
+
+ls -l 
+
+** touch command (creating files)
+
+touch x.html y.txt z.js t.css
+
+** removing files / directories 
+
+rm -> removes files -> permanent delete
+
+rm x.html y.txt
+
+rmdir -> removes folders -> deletes only empty folders
+
+rm -rf <dirname> -> rf -> recursive force -> removes 
+
+rm -rf XYZ --> removes permanently
+
+
