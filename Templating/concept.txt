@@ -1,1 +1,5 @@
 EJS -> Embedded Javascript
+partials -> including templates in other templates
+<%- include('partials/head') %> 
+here partials is a folder and head is a ejs file
+create partials in views folder
