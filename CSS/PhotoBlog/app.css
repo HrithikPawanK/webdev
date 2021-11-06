@@ -1,0 +1,14 @@
+img {
+    width: 30%;
+    height: 50vh;
+    margin: 1.666%;
+}
+
+nav {
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+    width: 30%;
+    font-size: 1.5em;
+    margin-left: 1.66%;
+    padding: 1.5em 0px;
+}
