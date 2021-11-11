@@ -22,7 +22,7 @@ app.use(express.json())
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
 
-const comments = [
+let comments = [
     {
         id : uuidv4(),
         username: 'Hrithik',
@@ -58,6 +58,12 @@ app.get('/comments/:id/edit', (req, res) => {
     const {id} = req.params
     const comment = comments.find(c => c.id === id)
     res.render('comments/edit', {comment})
+})
+
+app.delete('/comments/:id', (req, res) => {
+    const {id} = req.params
+    comments = comments.filter(c => c.id !== id) // returns a new array
+    res.redirect('/comments')
 })
 
 app.patch('/comments/:id', (req, res) => {
