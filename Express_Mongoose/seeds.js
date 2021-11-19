@@ -1,4 +1,5 @@
 // this file is just for adding some data to test, just for development :)
+// when we run this file then data will be added to db
 
 const mongoose = require('mongoose');
 const Product = require('./models/product')
