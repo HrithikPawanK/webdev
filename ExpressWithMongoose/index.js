@@ -4,7 +4,6 @@ const path = require('path');
 const mongoose = require('mongoose');
 const methodOverride = require('method-override')
 
-
 const Product = require('./models/product');
 
 mongoose.connect('mongodb://localhost:27017/farmStand', { useNewUrlParser: true, useUnifiedTopology: true })
@@ -69,8 +68,6 @@ app.delete('/products/:id', async (req, res) => {
     const deletedProduct = await Product.findByIdAndDelete(id);
     res.redirect('/products');
 })
-
-
 
 app.listen(3000, () => {
     console.log("APP IS LISTENING ON PORT 3000!")
